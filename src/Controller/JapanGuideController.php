@@ -21,7 +21,7 @@ class JapanGuideController extends AbstractController
         ]);
     }
 
-    #[Route('/japan/exploring-the-hidden-gems-of-japana', name: 'japanExploringHiddenGems')]
+    #[Route('/japan/exploring-the-hidden-gems-of-japan', name: 'japanExploringHiddenGems')]
     public function japanExploringHiddenGems()
     {
         return $this->render('japanguide/japanExploringHiddenGems.html.twig', [
