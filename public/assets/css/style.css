@@ -267,6 +267,9 @@ header.sticky{
 	padding: 7px 0 0;
 	display: inline-block;
 }
+.journey-text {
+	padding-top: 20px;
+}
 .articles-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));

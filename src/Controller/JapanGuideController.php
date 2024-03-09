@@ -27,4 +27,11 @@ class JapanGuideController extends AbstractController
         return $this->render('japanguide/japanExploringHiddenGems.html.twig', [
         ]);
     }
+
+    #[Route('/osaka/five-best-day-trips-from-osaka', name: 'osakaFiveBestDayTrips')]
+    public function osakaFiveBestDayTrips()
+    {
+        return $this->render('japanguide/osakaFiveBestDayTrips.html.twig', [
+        ]);
+    }
 }

@@ -1,0 +1,188 @@
+{% include 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .home{
+            background: url(../assets/img/kyotobackground.jpg);
+        }
+    </style>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Five Best Day Trips<br>from Osaka</h1>
+            <p>Castles, Nature and More</p>
+        </div>
+    </section>
+
+    <section id="article">
+        <div class="toc-container">
+            <div class="toc-container-title" onclick="toggleToc()">
+                <p id="toc-title" class="toc-title">What's In This Article</p>
+                <div id="toggle-button" class="toggle-button">
+                    <i class='bx bxs-toggle-left bx-md'></i>
+                </div>
+            </div>
+            <nav>
+                <ul id="toc-list">
+                    <li>
+                        <a href="#kyoto" style="text-decoration: underline;">
+                            1. Kyoto: A Journey Back in Time
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nara" style="text-decoration: underline;">
+                            2. Nara: Where History Meets Nature
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kobe" style="text-decoration: underline;">
+                            3. Kobe: A Blend of Nature and Cosmopolitan Life
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#himeji" style="text-decoration: underline;">
+                            4. Himeji: The Home of Japan’s Most Magnificent Castle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#minohfalls" style="text-decoration: underline;">
+                            5. Minoh Falls: A Natural Retreat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#railpasses" style="text-decoration: underline;">
+                            6. Regional Rail Passes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top-title">
+            <h2>
+                Osaka, the bustling heart of Japan’s Kansai region, is not only famous for its dynamic food scene and historical landmarks but also serves as a gateway to a plethora of fascinating day trip destinations.
+            </h2>
+        </div>
+        <p class="article-text">
+            From the serene beauty of ancient capitals to the natural splendor of scenic waterfalls, here are the five best day trips from Osaka, offering an enriching blend of cultural and natural attractions.
+        </p>
+        <div class="title article-text" id="kyoto">
+            <h2>
+                Kyoto: A Journey Back in Time
+            </h2>
+        </div>
+        <p class="article-text">
+            Kyoto, a mere 30-minute train ride from Osaka, stands as a timeless testament to Japan's rich cultural and historical heritage. As the country’s capital for over 1,000 years, Kyoto boasts numerous UNESCO World Heritage Sites, including the mesmerizing Fushimi Inari Taisha, the Golden Pavilion (Kinkaku-ji), and the historic Gion district. Kyoto’s allure lies in its ability to transport visitors to the heart of traditional Japan.
+        </p>
+        <h3 class="journey-text">
+            Getting There:
+        </h3>
+        <p>
+            <strong>By Train</strong>: The quickest route to Kyoto from Osaka is via the JR Tokaido-Sanyo Line. Direct rapid trains from Osaka Station to Kyoto Station take about 30 minutes. You can also take the Hankyu-Kyoto Line from Osaka-Umeda to Kyoto-Kawaramachi station, which takes 45-75 minutes, depending on the exact train.
+        </p>
+        <img src="{{ asset('/assets/img/background.jpg') }}" class="article-image" alt="Kodai-ji, Kyoto">
+        <figcaption class="caption-text">
+            Kodai-ji, Kyoto © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="nara">
+            <h2>
+                Nara: Where History Meets Nature
+            </h2>
+        </div>
+        <p class="article-text">
+            Under an hour’s journey from Osaka, Nara offers a unique blend of historical landmarks and natural beauty. The city is renowned for the Todai-ji Temple, housing a colossal Buddha statue, and the charming Nara Park, where deer mingle freely with visitors. Nara’s tranquil ambiance provides a peaceful escape from Osaka’s urban energy.
+        </p>
+        <h3 class="journey-text">
+            Getting There:
+        </h3>
+        <p>
+            <strong>By Train</strong>: The JR Yamatoji Line connects Osaka to Nara. Trains depart from JR Osaka Station, reaching JR Nara Station in about 50 minutes. Alternatively, you can travel on the Kintetsu Line from Osaka-Namba to Kintetsu-Nara in 45 minutes.
+        </p>
+        <img src="{{ asset('/assets/img/nara.jpg') }}" class="article-image" alt="Nara">
+        <figcaption class="caption-text">
+            Nara © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="kobe">
+            <h2>
+                Kobe: A Blend of Nature and Cosmopolitan Life
+            </h2>
+        </div>
+        <p class="article-text">
+            Kobe, a scenic city nestled between the sea and the Rokko mountain range, is about 30 minutes away from Osaka by train. Beyond its culinary fame for the succulent Kobe beef, the city offers stunning views from the Kobe Ropeway and Nunobiki Herb Gardens and the quaint European-style houses in the Kitano-cho district. The Kobe Earthquake Memorial Museum provides profound insights into the city’s resilient spirit.
+        </p>
+        <h3 class="journey-text">
+            Getting There:
+        </h3>
+        <p>
+            <strong>By Train</strong>: The Tokaido Main Line runs from Osaka Station to Kobe Station. The journey takes about 25 minutes on a Special Rapid Service train. You can also travel on the Hanshin Line or the Hankyū Kobe Line, both of which run from Osaka-Umeda.
+        </p>
+        <div class="title article-text" id="himeji">
+            <h2>
+                Himeji: The Home of Japan’s Most Magnificent Castle
+            </h2>
+        </div>
+        <p class="article-text">
+            An hour’s train ride from Osaka, Himeji is celebrated for its exquisite Himeji Castle, a UNESCO World Heritage Site affectionately known as "White Heron Castle" due to its elegant white exterior. This architectural masterpiece, alongside the adjacent Kokoen Garden, offers a picturesque setting for visitors to immerse themselves in Japan’s samurai history.
+        </p>
+        <h3 class="journey-text">
+            Getting There:
+        </h3>
+        <p>
+            <strong>By Train</strong>: The Shinkansen (bullet train) offers the fastest route from Shin-Osaka Station to Himeji Station, taking about 30 minutes. There are also bullet trains from Osaka Station that reach Himeji in around one hour. Alternatively, the Hanshin Line takes around 1h45 minutes from Osaka-Umeda Station.
+        </p>
+        <img src="{{ asset('/assets/img/himeji.jpg') }}" class="article-image" alt="Himeji">
+        <figcaption class="caption-text">
+            Himeji © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="minohfalls">
+            <h2>
+                Minoh Falls: A Natural Retreat
+            </h2>
+        </div>
+        <p class="article-text">
+            Explore the natural beauty of Minoh Falls, located within the Minoh Quasi-National Park in Osaka Prefecture. This majestic waterfall is a popular destination for those looking to enjoy nature without straying too far from the city. The park offers a scenic walking trail that leads to the waterfall, passing through lush forest and alongside streams. The area is especially beautiful in autumn when the maple leaves turn vibrant shades of red and gold. After a hike, visitors can enjoy the local specialty, momiji tempura – maple leaves deep-fried in a light batter, a unique treat that captures the essence of Minoh.
+        </p>
+        <h3 class="journey-text">
+            Getting There:
+        </h3>
+        <p>
+            <strong>By Train and Bus</strong>: Take the Hankyu Takarazuka Line from Umeda Station (Osaka) to Ishibashi Station. Transfer to the Hankyu Minoh Line and get off at Minoh Station (around 20-25 minutes total). The waterfall is about a one hour walk from the station through Minoh Park.
+        </p>
+        <div class="title article-text" id="railpasses">
+            <h2>
+                Regional Rail Passes
+            </h2>
+        </div>
+        <p class="article-text">
+            Kansai Area Pass: Offers unlimited travel on JR trains in the Kansai region for a selected number of days, covering Kyoto, Kobe, Nara and Himeji. However, the Shinkansen is not covered on this pass. The pass costs ¥2800 for one day, ¥4800 for two consecutive days, ¥5800 for three and ¥7000 for four days.
+            <br><br>
+            Kansai Railway Pass: Useful for non-JR lines in the Kansai region. ¥5600 for a 2-day pass and ¥7000 for a 3-day pass. This pass covers Osaka - Kyoto, Osaka - Kobe, Osaka - Nara and Osaka - Minoh on non-JR lines (Hankyū, Keihan, Kintetsu, Hanshin etc are all covered with this pass). Himeji is also possible by travelling via Kobe.
+            <br><br>
+            ICOCA Card: A prepaid smart card for convenient tap-and-go travel on trains, buses, and subways in the Kansai area. You can purchase a physical ICOCA or you can install it on your phone and use it as a virtual card. There is a ¥500 deposit for getting a physical card and can be bought at most machines at train stations in and around Osaka.
+        </p>
+        <img src="{{ asset('/assets/img/train.jpg') }}" class="article-image" alt="Train">
+        <figcaption class="caption-text">
+            Hankyu Line to Kyoto © Japan Guide
+        </figcaption>
+        <p class="article-text">
+            Embarking on day trips from Osaka unveils the diverse beauty of the Kansai region, from the historic splendour of Kyoto and Nara to the natural allure of Minoh Falls. Each destination promises a unique exploration of Japan’s cultural depth and natural beauty, making every journey an integral part of your Osaka adventure.
+        </p>
+    </section>
+    <script>
+        function toggleToc() {
+            var tocList = document.getElementById("toc-list");
+            var toggleButtonIcon = document.querySelector("#toggle-button i");
+            var toggleButtonDiv = document.getElementById("toggle-button");
+            var tocTitle = document.getElementById("toc-title");
+
+            if (tocList.style.display === "none") {
+                tocList.style.display = "block";
+                toggleButtonIcon.className = "bx bxs-toggle-left bx-md";
+            } else {
+                tocList.style.display = "none";
+                toggleButtonIcon.className = "bx bxs-toggle-right bx-md";
+                toggleButtonDiv.className = "toggle-button-off";
+                tocTitle.className = "toc-title-off";
+            }
+        }
+    </script>
+{% endblock %}
