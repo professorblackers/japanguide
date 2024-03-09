@@ -1,0 +1,163 @@
+{% include 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .home{
+            background: url(../assets/img/magomebackground.jpg);
+        }
+    </style>
+
+    <section class="home" id="home">
+        <div class="home-text home-inside">
+            <h1>Exploring the Hidden<br>Gems of Japan</h1>
+            <p>Five Lesser-Known Destinations</p>
+        </div>
+    </section>
+
+    <section id="article">
+        <div class="toc-container">
+            <div class="toc-container-title" onclick="toggleToc()">
+                <p id="toc-title" class="toc-title">What's In This Article</p>
+                <div id="toggle-button" class="toggle-button">
+                    <i class='bx bxs-toggle-left bx-md'></i>
+                </div>
+            </div>
+            <nav>
+                <ul id="toc-list">
+                    <li>
+                        <a href="#kanazawa" style="text-decoration: underline;">
+                            1. Kanazawa, Ishikawa: A Cultural Jewel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#iseshima" style="text-decoration: underline;">
+                            2. Ise-Shima, Mie: The Spiritual Heartland
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kurobe" style="text-decoration: underline;">
+                            3. Kurobe Gorge, Toyama: Nature's Masterpiece
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#magome" style="text-decoration: underline;">
+                            4. Magome-juku, Gifu: Stepping Back in Time
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kawagoe" style="text-decoration: underline;">
+                            5. Kawagoe, Saitama: The Edo Period's Living Museum
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top-title">
+            <h2>
+                Japan, a country where tradition meets modernity, is renowned for its iconic landmarks and bustling cities.
+            </h2>
+        </div>
+        <p class="article-text">
+            However, beyond the well-trodden paths lie hidden gems that offer a glimpse into Japan’s soul, waiting to be discovered by those willing to venture off the beaten track.
+            <br><br>
+            This article shines a light on five lesser-known destinations across Japan - from the historic streets of Kawagoe to the scenic beauty of Kurobe Gorge - promising unique experiences away from the crowds.
+        </p>
+        <div class="title article-text" id="kanazawa">
+            <h2>
+                Kanazawa, Ishikawa: A Cultural Jewel
+            </h2>
+        </div>
+        <p class="article-text">
+            Kanazawa, dubbed "Little Kyoto," preserves the essence of traditional Japanese culture amidst its samurai and geisha districts, most notably the Higashi Chaya District. The city's pride, Kenrokuen Garden, ranks among Japan's most exquisite landscape gardens.
+            <br><br>
+            For art aficionados, the 21st Century Museum of Contemporary Art merges modernity with tradition in a captivating display of contemporary works. Kanazawa stands as a beacon of Japan's rich cultural heritage.
+        </p>
+        <img src="{{ asset('/assets/img/kanazawa.jpg') }}" class="article-image" alt="Kenrokuen, Kanazawa">
+        <figcaption class="caption-text">
+            Kenrokuen, Kanazawa © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="iseshima">
+            <h2>
+                Ise-Shima, Mie: The Spiritual Heartland
+            </h2>
+        </div>
+        <p class="article-text">
+            Ise-Shima holds a special place in the spiritual landscape of Japan, home to the revered Ise Grand Shrine dedicated to the sun goddess Amaterasu. Beyond its spiritual significance, Ise-Shima dazzles with its picturesque coastline and the age-old tradition of Ama pearl divers.
+            <br><br>
+            Adding to Ise-Shima's allure are the Meoto Iwa, or the wedded rocks, a fascinating natural phenomenon. These two sacred rocks, bound together by a heavy rope, symbolize the union of the creator gods Izanagi and Izanami. Situated off the coast near the Futami Okitama Shrine, the rocks create a breathtaking sight, especially at sunrise when they frame the rising sun between them.
+        </p>
+        <img src="{{ asset('/assets/img/iseshima.jpg') }}" class="article-image" alt="Meoto Iwa, Ise-Shima">
+        <figcaption class="caption-text">
+            Meoto Iwa, Ise-Shima © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="kurobe">
+            <h2>
+                Kurobe Gorge, Toyama: Nature's Masterpiece
+            </h2>
+        </div>
+        <p class="article-text">
+            Toyama Prefecture's Kurobe Gorge, accessible via the scenic Kurobe Gorge Railway, offers a journey through lush forests, along the rushing river, and past hot springs. The gorge is a highlight in autumn when the foliage presents a vivid display of colors.
+            <br><br>
+            Kurobe Gorge is an ideal destination for nature lovers and those seeking solace in Japan’s majestic landscapes.
+        </p>
+        <img src="{{ asset('/assets/img/kurobe.jpg') }}" class="article-image" alt="Kurobe">
+        <figcaption class="caption-text">
+            Kurobe Gorge © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="magome">
+            <h2>
+                Magome-juku, Gifu: Stepping Back in Time
+            </h2>
+        </div>
+        <p class="article-text">
+            Magome-juku in Gifu Prefecture is a beautifully preserved post town on the historic Nakasendo trail, which connected Kyoto and Edo (Tokyo) during the Edo Period.
+            <br><br>
+            Walking the cobblestone streets lined with Edo-era inns, shops, and tea houses feels like stepping back in time. The walk from Magome to Tsumago, another preserved post town, offers picturesque countryside views, waterfalls, and a glimpse into Japan’s rural beauty and historical past.
+            <br><br>
+            Alternatively, walk the Ochiai Cobblestone Path to the lesser known post town of Ochiai-juku - the 800m cobblestone road features 70m of the original path from the Edo period, meaning you are literally walking in the footsteps of samurai!
+        </p>
+        <img src="{{ asset('/assets/img/magome.jpg') }}" class="article-image" alt="magome">
+        <figcaption class="caption-text">
+            Magome © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="kawagoe">
+            <h2>
+                Kawagoe, Saitama: The Edo Period's Living Museum
+            </h2>
+        </div>
+        <p class="article-text">
+            Kawagoe, or "Little Edo," transports visitors back in time. Kurazukuri Street, lined with clay-walled warehouse-style buildings, transports visitors to the Edo Period. The Toki no Kane, a bell tower that has marked time for centuries, is a symbol of Kawagoe.
+            <br><br>
+            The city is also famous for its sweet potato snacks, reflecting its agricultural heritage. Kawagoe combines historical intrigue with culinary delights, making it a must-visit for those looking to experience Edo-era Japan.
+        </p>
+        <img src="{{ asset('/assets/img/kawagoe.jpg') }}" class="article-image" alt="kawagoe">
+        <figcaption class="caption-text">
+            Kawagoe © Japan Guide
+        </figcaption>
+        <p class="article-text">
+            These five lesser-known destinations in Japan offer travelers a unique opportunity to explore the country's rich history, cultural depth, and natural beauty.
+            <br><br>
+            From the spiritual sites of Ise-Shima, including the captivating Meoto Iwa, to the historic atmosphere of Kawagoe, each location promises an unforgettable experience distinct from the typical tourist trail.
+            <br><br>
+            Japan's hidden gems await those eager to discover its many layers, promising adventures that enrich the soul and captivate the heart.
+        </p>
+    </section>
+    <script>
+        function toggleToc() {
+            var tocList = document.getElementById("toc-list");
+            var toggleButtonIcon = document.querySelector("#toggle-button i");
+            var toggleButtonDiv = document.getElementById("toggle-button");
+            var tocTitle = document.getElementById("toc-title");
+
+            if (tocList.style.display === "none") {
+                tocList.style.display = "block";
+                toggleButtonIcon.className = "bx bxs-toggle-left bx-md";
+            } else {
+                tocList.style.display = "none";
+                toggleButtonIcon.className = "bx bxs-toggle-right bx-md";
+                toggleButtonDiv.className = "toggle-button-off";
+                tocTitle.className = "toc-title-off";
+            }
+        }
+    </script>
+{% endblock %}
