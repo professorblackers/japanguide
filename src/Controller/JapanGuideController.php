@@ -13,4 +13,11 @@ class JapanGuideController extends AbstractController
         return $this->render('japanguide/index.html.twig', [
         ]);
     }
+
+    #[Route('/osaka/ten-things-to-do-in-osaka', name: 'osakaTenThingsToDo')]
+    public function osakaTenThingsToDo()
+    {
+        return $this->render('japanguide/osakaTenThingsToDo.html.twig', [
+        ]);
+    }
 }

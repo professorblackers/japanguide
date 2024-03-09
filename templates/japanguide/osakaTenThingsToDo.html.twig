@@ -1,0 +1,286 @@
+{% include 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .home{
+            background: url(../assets/img/osaka.jpg) 5% 18%;
+        }
+    </style>
+
+    <section class="home" id="home">
+        <div class="home-text home-inside">
+            <h1>Ten Things to Do<br>in Osaka</h1>
+            <p>A Guide to Unforgettable Experiences</p>
+        </div>
+    </section>
+
+    <section id="article">
+        <div class="toc-container">
+            <div class="toc-container-title" onclick="toggleToc()">
+                <p id="toc-title" class="toc-title">What's In This Article</p>
+                <div id="toggle-button" class="toggle-button">
+                    <i class='bx bxs-toggle-left bx-md'></i>
+                </div>
+            </div>
+            <nav>
+                <ul id="toc-list">
+                    <li>
+                        <a href="#osakaCastle" style="text-decoration: underline;">
+                            1. Exploring Osaka Castle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#universalStudiosJapan" style="text-decoration: underline;">
+                            2. Universal Studios Japan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dotonbori" style="text-decoration: underline;">
+                            3. Dotonbori: The Heart of Osaka's Nightlife
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dendenTown" style="text-decoration: underline;">
+                            4. DenDen Town: The Tech and Otaku Culture Hub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shinsekai" style="text-decoration: underline;">
+                            5. Shinsekai and the Tsutenkaku Tower
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#streetFood" style="text-decoration: underline;">
+                            6. The Culinary Adventure: Sampling Osaka's Street Food
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nambaYasaka" style="text-decoration: underline;">
+                            7. Namba Yasaka Shrine: A Hidden Gem
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#umedaSky" style="text-decoration: underline;">
+                            8. Osaka's Umeda Sky Building and Floating Garden Observatory
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shinsaibashi" style="text-decoration: underline;">
+                            9. Shopping in Shinsaibashi: A Shopper's Paradise
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#itinerary" style="text-decoration: underline;">
+                            10. Osaka Itinerary: Planning Your Visit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#faqs" style="text-decoration: underline;">
+                            11. FAQs
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top-title">
+            <h2>
+                Osaka, Japan's vibrant metropolis, is a fusion of historical treasures and modern entertainment.
+                Our guide explores the essential activities that make Osaka a captivating destination.
+            </h2>
+        </div>
+        <p class="article-text">
+            Osaka is celebrated for its lively streets, historical landmarks, and gastronomic delights. As Japan's third-largest city, it offers a unique blend of culture, history, and entertainment. From the majestic Osaka Castle to the futuristic Umeda Sky Building, this guide to the top ten things to do in Osaka promises an enriching journey through the heart of Kansai.
+        </p>
+        <div class="title article-text" id="osakaCastle">
+            <h2>
+                Exploring Osaka Castle
+            </h2>
+        </div>
+        <p class="article-text">
+            The iconic Osaka Castle is a testament to Japan's rich history and architectural beauty. Visitors can explore its museum, which houses artifacts related to the castle's history, and enjoy breathtaking views from its top. Nishinomaru Park, a haven of tranquility, becomes especially enchanting during cherry blossom season and during the autumn period.
+            <br><br>
+            Tip: Visiting during February? Make sure to visit the Castle's Plum Grove! It contains more than 1,200 trees of over 100 varieties of plum blossom and they produce a heavenly scent when they're in bloom.
+        </p>
+        <div class="block-quote">
+            <p>
+                <a href="https://affiliate.klook.com/redirect?aid=38574&aff_adid=825574&k_site=https%3A%2F%2Fwww.klook.com%2Factivity%2F30110-osaka-castle-ticket%2F" target="_blank">Book your ticket here</a> for the Osaka Castle Museum (¥600)
+            </p>
+        </div>
+        <img src="{{ asset('/assets/img/osaka.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Osaka Castle © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="universalStudiosJapan">
+            <h2>
+                Universal Studios Japan
+            </h2>
+        </div>
+        <p class="article-text">
+            Universal Studios Japan brings to life your favorite films and franchises with exhilarating rides and shows. Highlights include Super Nintendo World, Wizarding World of Harry Potter and the Minion Park. Seasonal events add extra magic, making every visit unforgettable.
+            <br><br>
+            Make sure to book your tickets in advance (a month ahead in peak season just to be safe!) for the park. Once you are in the park and your ticket has been activated, you can select a timed entry for Super Nintendo World and the Wizarding World of Harry Potter.
+        </p>
+        <div class="block-quote">
+            <p>
+                <a href="https://affiliate.klook.com/redirect?aid=38574&aff_adid=825574&k_site=https%3A%2F%2Fwww.klook.com%2Factivity%2F46604-universal-studios-japan-e-ticket-osaka-qr-code-direct-entry%2F%3Fspm%3DSearchResult.SearchResult_LIST%26clickId%3Dfaad429929" target="_blank">Book your ticket here</a> for Universal Studios Japan. - 1 Day USJ Pass costs from ¥8,600 to ¥10,900 (higher prices tend to be on weekends and public holidays, the cheapest price is usually Tuesday/Wednesday/Thursday)
+            </p>
+        </div>
+        <img src="{{ asset('/assets/img/universalstudios1.jpg') }}" class="article-image-three">
+        <img src="{{ asset('/assets/img/universalstudios2.jpg') }}" class="article-image-three-alt">
+        <img src="{{ asset('/assets/img/universalstudios3.jpg') }}" class="article-image-three-alt">
+        <figcaption class="caption-text">
+            Universal Studios Japan © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="dotonbori">
+            <h2>
+                Dotonbori: The Heart of Osaka's Nightlife
+            </h2>
+        </div>
+        <p class="article-text">
+            Dotonbori epitomizes Osaka's vibrant nightlife and culinary scene. This lively district dazzles with its neon signs and offers an endless variety of street food, from takoyaki to okonomiyaki. A walk along the Dotonbori River presents the perfect blend of scenic beauty and urban energy.
+            <br><br>
+            Don't miss the Glico Running Man sign for that iconic Osaka photo!
+        </p>
+        <img src="{{ asset('/assets/img/dotonbori.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Dotonbori © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="dendenTown">
+            <h2>
+                DenDen Town: The Tech and Otaku Culture Hub
+            </h2>
+        </div>
+        <p class="article-text">
+            DenDen Town is a paradise for tech enthusiasts and anime fans. This district is filled with stores specializing in electronics, manga, and anime goods. Unique cafes and specialty shops provide a deep dive into Japan's otaku culture, making it a must-visit for anyone interested in the latest in tech and anime.
+        </p>
+        <div class="title article-text" id="shinsekai">
+            <h2>
+                Shinsekai and the Tsutenkaku Tower
+            </h2>
+        </div>
+        <p class="article-text">
+            Shinsekai, meaning "New World," offers a nostalgic look at post-war Japan. The Tsutenkaku Tower, standing tall at 108m, offers panoramic views of Osaka. The area's retro charm and delicious kushikatsu (fried skewer) bars invite visitors to explore and indulge.
+            <br><br>
+            Got a head for heights? Try walking out on to 'TIP THE TSUTENKAKU', a glass-bottomed viewing platform jutting out from the tower! It's not for the faint of heart at 92.5m above ground...
+            <br><br>
+            If that's a little too nail biting for you, why not have a go on the TOWER SLIDER, a 60-metre long slide that curves its way around the east elevator tower? Don't worry - there's no glass bottom on this slide!
+        </p>
+        <div class="block-quote">
+            <p>
+                <a href="https://affiliate.klook.com/redirect?aid=38574&aff_adid=825574&k_site=https%3A%2F%2Fwww.klook.com%2Factivity%2F76766-osaka-tsutenkaku-admission-ticket%2F%3Fspm%3DSearchResult.SearchSuggest_LIST%26clickId%3Dcb6ee3b4ab" target="_blank">Book your entry ticket to Tsutenkaku Tower here</a> (¥900). Once there, you can book your ticket for Tip The Tsutenkaku (¥300) and the Tower Slider (¥1,000)
+            </p>
+        </div>
+        <img src="{{ asset('/assets/img/shinsekai.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Tsutenkaku Tower © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="streetFood">
+            <h2>
+                The Culinary Adventure: Sampling Osaka's Street Food
+            </h2>
+        </div>
+        <p class="article-text">
+            Osaka is often dubbed the nation's kitchen, and a culinary adventure here is a must. The city's street food, including takoyaki, okonomiyaki, and kushikatsu, represents the essence of Osaka's food culture. Exploring the food stalls and markets is an experience in itself.
+            <br><br>
+            If you truly want to experience the food culture of Osaka, take a guided food tour of Kuromon Market! This is the best way to experience the city's food with a local to guide the way.
+        </p>
+        <img src="{{ asset('/assets/img/kuromon.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Kuromon Market © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="nambaYasaka">
+            <h2>
+                Namba Yasaka Shrine: A Hidden Gem
+            </h2>
+        </div>
+        <p class="article-text">
+            Namba Yasaka Shrine, with its unique lion head stage, is a spiritual oasis in the midst of urban hustle. This lesser-known shrine offers a peaceful environment for reflection and is known for its distinctive architecture, making it a fascinating visit for those looking to explore Osaka's spiritual side.
+        </p>
+        <img src="{{ asset('/assets/img/nambayasaka.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Namba Yasaka Shrine © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="umedaSky">
+            <h2>
+                Osaka's Umeda Sky Building and Floating Garden Observatory
+            </h2>
+        </div>
+        <p class="article-text">
+            The architectural marvel of the Umeda Sky Building, with its Floating Garden Observatory, offers a 360-degree view of the city. This sky-high garden bridge connects the building's two towers and provides a unique vantage point to witness Osaka's skyline, especially during sunset.
+        </p>
+        <div class="block-quote">
+            <p>
+                <a href="https://affiliate.klook.com/redirect?aid=38574&aff_adid=825574&k_site=https%3A%2F%2Fwww.klook.com%2Factivity%2F35861-umeda-sky-building-kuchu-teien-observatory-ticket%2F%3Fspm%3DSearchResult.SearchSuggest_LIST%26clickId%3Dae3b0742de" target="_blank">Book your entry ticket to Umeda Sky here</a> (¥1,500).
+            </p>
+        </div>
+        <img src="{{ asset('/assets/img/umedasky1.jpg') }}" class="article-image-three">
+        <img src="{{ asset('/assets/img/umedasky2.jpg') }}" class="article-image-three-alt">
+        <img src="{{ asset('/assets/img/umedasky3.jpg') }}" class="article-image-three-alt">
+        <figcaption class="caption-text">
+            Umeda Sky © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="shinsaibashi">
+            <h2>
+                Shopping in Shinsaibashi: A Shopper's Paradise
+            </h2>
+        </div>
+        <p class="article-text">
+            Shinsaibashi, Osaka's premier shopping district, blends traditional and modern retail experiences. Whether you're after high fashion, souvenirs, or the latest gadgets, Shinsaibashi's covered shopping arcade caters to every need and budget, ensuring a shopper's delight.
+        </p>
+        <img src="{{ asset('/assets/img/shinsaibashi.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Shinsaibashi © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="itinerary">
+            <h2>
+                Osaka Itinerary: Planning Your Visit
+            </h2>
+        </div>
+        <p class="article-text">
+            Creating the perfect Osaka itinerary involves balancing visits to historical sites with modern attractions. This guide serves as a starting point for discovering Osaka's diverse offerings, from its historical wonders to its modern marvels.
+        </p>
+        <p class="article-text">
+            Osaka's blend of historical and modern attractions makes it a unique destination within Japan. This guide to the top ten things to do in Osaka invites travelers to explore a city where every corner offers new discoveries and where each visit promises unforgettable memories.
+        </p>
+        <img src="{{ asset('/assets/img/osakaculture.jpg') }}" class="article-image">
+        <figcaption class="caption-text">
+            Traditional Musician in Osaka Castle Park © Japan Guide
+        </figcaption>
+        <div class="title article-text" id="faqs">
+            <h2>
+                FAQs
+            </h2>
+        </div>
+        <p class="article-text">
+            * <span style="color: plum">Best time to visit Osaka?</span><br>Spring and autumn offer pleasant weather and beautiful scenery, making them ideal times to visit.
+            <br><br>
+            * <span style="color: plum">How to get around in Osaka?</span><br>Osaka's extensive public transportation system, including subways, trains, and buses, makes it easy to navigate the city. Pick up the <strong><a href="https://affiliate.klook.com/redirect?aid=38574&aff_adid=825574&k_site=https%3A%2F%2Fwww.klook.com%2Factivity%2F11515-osaka-metro-1-2-day-pass-osaka%2F">Osaka Metro Pass</a></strong> to easily get around.
+            <br><br>
+            * <span style="color: plum">What are some off-the-beaten-path activities in Osaka?</span><br>Visiting the Instant Ramen Museum, exploring Amerika-mura, and relaxing in an onsen offer unique experiences beyond the typical tourist path.
+            <br><br>
+            * <span style="color: plum">Tips for budget travelers in Osaka?</span><br>Utilize the <strong><a href="https://affiliate.klook.com/redirect?aid=38574&aff_adid=825574&k_site=https%3A%2F%2Fwww.klook.com%2Factivity%2F82312-amazing-pass-osaka%2F">Osaka Amazing Pass</a></strong>, dine at local markets, and consider staying in guesthouses or capsule hotels for a budget-friendly trip.
+            <br><br>
+            * <span style="color: plum">How many days are recommended for an Osaka itinerary?</span><br>Three to four days allow for a comprehensive exploration of Osaka's major attractions, though there's always more to discover with additional time.
+            <br><br>
+            * <span style="color: plum">Safety tips for travelers in Osaka?</span><br>Osaka is generally safe, but as with any major city, it's wise to stay vigilant, especially in crowded areas, and secure your valuables.
+        </p>
+    </section>
+    <script>
+        function toggleToc() {
+            var tocList = document.getElementById("toc-list");
+            var toggleButtonIcon = document.querySelector("#toggle-button i");
+            var toggleButtonDiv = document.getElementById("toggle-button");
+            var tocTitle = document.getElementById("toc-title");
+
+            if (tocList.style.display === "none") {
+                tocList.style.display = "block";
+                toggleButtonIcon.className = "bx bxs-toggle-left bx-md";
+            } else {
+                tocList.style.display = "none";
+                toggleButtonIcon.className = "bx bxs-toggle-right bx-md";
+                toggleButtonDiv.className = "toggle-button-off";
+                tocTitle.className = "toc-title-off";
+            }
+        }
+    </script>
+{% endblock %}
