@@ -268,7 +268,7 @@ header.sticky{
 	padding: 7px 0 0;
 	display: inline-block;
 }
-.package-content{
+.articles-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 	grid-gap: 2rem;
