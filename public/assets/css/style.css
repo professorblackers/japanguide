@@ -484,7 +484,7 @@ header.sticky{
 		transition: .2s;
 	}
 	section{
-		padding: 80px 3%;
+		padding: 20px 3%;
 		transition: .2s;
 	}
 	:root{
@@ -553,7 +553,8 @@ header.sticky{
 		text-align: center;
 	}
 	.home{
-		height: 85vh;
+		height: 100vh;
 		transition: .2s;
+		background: url(../img/background.jpg) 70% 50%;
 	}
 }
