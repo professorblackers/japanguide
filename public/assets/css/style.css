@@ -557,4 +557,21 @@ header.sticky{
 		transition: .2s;
 		background: url(../img/background.jpg) 70% 50%;
 	}
+
+	.article-image-three {
+		width: 20%;
+		height: auto;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px
+	}
+	.article-image-three-alt {
+		width: 20%;
+		height: auto;
+		display: inline-block;
+		margin-left: 50px;
+		margin-right: auto;
+		padding-top: 20px
+	}
 }
