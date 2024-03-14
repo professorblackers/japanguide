@@ -204,19 +204,15 @@ header.sticky{
 .article-image-three {
 	width: 30%;
 	height: auto;
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
 	padding-top: 20px
 }
-.article-image-three-alt {
-	width: 30%;
-	height: auto;
-	display: inline-block;
-	margin-left: 50px;
-	margin-right: auto;
-	padding-top: 20px
+.image-container {
+	display: flex;
 }
+.image-container img {
+	flex: 1;
+}
+
 .caption-text {
 	display: block;
 	margin-left: auto;
@@ -563,14 +559,6 @@ header.sticky{
 		height: auto;
 		display: inline-block;
 		margin-left: auto;
-		margin-right: auto;
-		padding-top: 20px
-	}
-	.article-image-three-alt {
-		width: 20%;
-		height: auto;
-		display: inline-block;
-		margin-left: 50px;
 		margin-right: auto;
 		padding-top: 20px
 	}
